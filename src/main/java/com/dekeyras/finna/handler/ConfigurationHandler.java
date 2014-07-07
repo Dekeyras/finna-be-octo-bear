@@ -36,7 +36,7 @@ public class ConfigurationHandler {
             configuration.load();
 
             // Load config values
-            configValue = configuration.get(Configuration.CATEGORY_GENERAL, "configValue", true).getBoolean();
+            configValue = configuration.get(Configuration.CATEGORY_GENERAL, "configValue", true, "This is a test config value").getBoolean();
 
         } catch (Exception e) {
             Logger.error(e);

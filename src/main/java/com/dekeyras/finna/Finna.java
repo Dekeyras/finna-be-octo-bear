@@ -1,6 +1,8 @@
 package com.dekeyras.finna;
 
 import com.dekeyras.finna.handler.ConfigurationHandler;
+import com.dekeyras.finna.init.ModBlocks;
+import com.dekeyras.finna.init.ModItems;
 import com.dekeyras.finna.proxy.IProxy;
 import com.dekeyras.finna.reference.Reference;
 import com.dekeyras.finna.utility.Logger;
@@ -26,6 +28,10 @@ public class Finna {
     public void preInit(FMLPreInitializationEvent event) {
         ConfigurationHandler.init(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+
+        ModItems.Init();
+        ModBlocks.Init();
+
         Logger.info("PreInit complete.");
     }
 
