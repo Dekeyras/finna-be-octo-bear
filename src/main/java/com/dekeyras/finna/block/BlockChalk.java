@@ -1,6 +1,7 @@
 package com.dekeyras.finna.block;
 
 import com.dekeyras.finna.init.ModItems;
+import net.minecraft.block.BlockFalling;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 
@@ -9,9 +10,9 @@ import java.util.Random;
 /**
  * Created by Keith on 07/07/2014.
  */
-public class BlockChalk extends BlockF {
+public class BlockChalk extends BlockFallingF {
     public BlockChalk() {
-        super(Material.clay);
+        super();
 
         this.setBlockName("chalk");
         this.setHardness(0.2f);
@@ -25,6 +26,6 @@ public class BlockChalk extends BlockF {
 
     @Override
     public int quantityDropped(Random random) {
-        return 1;
+        return random.nextInt(4) + 1;
     }
 }

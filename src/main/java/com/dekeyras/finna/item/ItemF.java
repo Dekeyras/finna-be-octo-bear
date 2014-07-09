@@ -1,6 +1,7 @@
 package com.dekeyras.finna.item;
 
 import com.dekeyras.finna.reference.Reference;
+import com.dekeyras.finna.utility.Logger;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -30,6 +31,7 @@ public class ItemF  extends Item {
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister) {
         itemIcon = iconRegister.registerIcon(this.getUnlocalizedName().substring(this.getUnlocalizedName().indexOf(".") + 1));
+        Logger.info(String.format("Registered Icon (%s) for: %s", itemIcon.getIconName(), this.toString()));
     }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName) {

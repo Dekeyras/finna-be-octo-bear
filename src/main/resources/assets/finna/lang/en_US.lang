@@ -1,6 +1,7 @@
 #Items
 item.finna:mapleLeaf.name=Maple Leaf
+item.finna:chalk.name=Chalk
 
 
 #Blocks
-tile.finna:void.name=Void
+tile.finna:chalk.name=Block of Chalk
