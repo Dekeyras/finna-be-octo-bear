@@ -13,9 +13,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 public class ModItems {
     public static final ItemF mapleLeaf = new ItemMapleLeaf();
     public static final ItemF chalk = new ItemChalk();
+    public static final ItemF copperIngot = (ItemF) (new ItemF()).setUnlocalizedName("copperIngot");
 
     public static void Init() {
         GameRegistry.registerItem(mapleLeaf, "mapleLeaf");
         GameRegistry.registerItem(chalk, "chalk");
+        GameRegistry.registerItem(copperIngot, "copperIngot");
     }
 }

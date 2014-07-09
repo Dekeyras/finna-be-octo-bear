@@ -1,7 +1,10 @@
 #Items
 item.finna:mapleLeaf.name=Maple Leaf
 item.finna:chalk.name=Chalk
-
+item.finna:copperIngot.name=Copper Ingot
 
 #Blocks
 tile.finna:chalk.name=Block of Chalk
+
+#Ores
+tile.finna:copperOre.name=Copper Ore

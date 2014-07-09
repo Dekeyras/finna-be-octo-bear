@@ -15,5 +15,7 @@ public class ModRecipes {
     public static void Init() {
         ItemStack chalkItem = new ItemStack(ModItems.chalk);
         GameRegistry.addRecipe(new ItemStack(ModBlocks.chalkBlock, 2), "xx", "xx", 'x', chalkItem);
+
+        GameRegistry.addSmelting(ModBlocks.oreCopperBlock, new ItemStack(ModItems.copperIngot), 1.0f);
     }
 }
